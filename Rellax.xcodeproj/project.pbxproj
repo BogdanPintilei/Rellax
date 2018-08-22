@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A3CFF6D212D97C200DF4870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFF6C212D97C200DF4870 /* AppDelegate.swift */; };
+		5A3CFF6F212D97C200DF4870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFF6E212D97C200DF4870 /* ViewController.swift */; };
+		5A3CFF72212D97C200DF4870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CFF70212D97C200DF4870 /* Main.storyboard */; };
+		5A3CFF74212D97C500DF4870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CFF73212D97C500DF4870 /* Assets.xcassets */; };
+		5A3CFF77212D97C500DF4870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CFF75212D97C500DF4870 /* LaunchScreen.storyboard */; };
+		5A3CFF82212D97C500DF4870 /* RellaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFF81212D97C500DF4870 /* RellaxTests.swift */; };
+		5A3CFF8D212D97C500DF4870 /* RellaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFF8C212D97C500DF4870 /* RellaxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A3CFF7E212D97C500DF4870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3CFF61212D97C200DF4870 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3CFF68212D97C200DF4870;
+			remoteInfo = Rellax;
+		};
+		5A3CFF89212D97C500DF4870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3CFF61212D97C200DF4870 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3CFF68212D97C200DF4870;
+			remoteInfo = Rellax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A3CFF69212D97C200DF4870 /* Rellax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rellax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3CFF6C212D97C200DF4870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A3CFF6E212D97C200DF4870 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A3CFF71212D97C200DF4870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A3CFF73212D97C500DF4870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A3CFF76212D97C500DF4870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A3CFF78212D97C500DF4870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3CFF7D212D97C500DF4870 /* RellaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RellaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3CFF81212D97C500DF4870 /* RellaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RellaxTests.swift; sourceTree = "<group>"; };
+		5A3CFF83212D97C500DF4870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3CFF88212D97C500DF4870 /* RellaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RellaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3CFF8C212D97C500DF4870 /* RellaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RellaxUITests.swift; sourceTree = "<group>"; };
+		5A3CFF8E212D97C500DF4870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A3CFF66212D97C200DF4870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3CFF7A212D97C500DF4870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3CFF85212D97C500DF4870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A3CFF60212D97C200DF4870 = {
+			isa = PBXGroup;
+			children = (
+				5A3CFF6B212D97C200DF4870 /* Rellax */,
+				5A3CFF80212D97C500DF4870 /* RellaxTests */,
+				5A3CFF8B212D97C500DF4870 /* RellaxUITests */,
+				5A3CFF6A212D97C200DF4870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A3CFF6A212D97C200DF4870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A3CFF69212D97C200DF4870 /* Rellax.app */,
+				5A3CFF7D212D97C500DF4870 /* RellaxTests.xctest */,
+				5A3CFF88212D97C500DF4870 /* RellaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A3CFF6B212D97C200DF4870 /* Rellax */ = {
+			isa = PBXGroup;
+			children = (
+				5A3CFF6C212D97C200DF4870 /* AppDelegate.swift */,
+				5A3CFF6E212D97C200DF4870 /* ViewController.swift */,
+				5A3CFF70212D97C200DF4870 /* Main.storyboard */,
+				5A3CFF73212D97C500DF4870 /* Assets.xcassets */,
+				5A3CFF75212D97C500DF4870 /* LaunchScreen.storyboard */,
+				5A3CFF78212D97C500DF4870 /* Info.plist */,
+			);
+			path = Rellax;
+			sourceTree = "<group>";
+		};
+		5A3CFF80212D97C500DF4870 /* RellaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3CFF81212D97C500DF4870 /* RellaxTests.swift */,
+				5A3CFF83212D97C500DF4870 /* Info.plist */,
+			);
+			path = RellaxTests;
+			sourceTree = "<group>";
+		};
+		5A3CFF8B212D97C500DF4870 /* RellaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3CFF8C212D97C500DF4870 /* RellaxUITests.swift */,
+				5A3CFF8E212D97C500DF4870 /* Info.plist */,
+			);
+			path = RellaxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A3CFF68212D97C200DF4870 /* Rellax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3CFF91212D97C500DF4870 /* Build configuration list for PBXNativeTarget "Rellax" */;
+			buildPhases = (
+				5A3CFF65212D97C200DF4870 /* Sources */,
+				5A3CFF66212D97C200DF4870 /* Frameworks */,
+				5A3CFF67212D97C200DF4870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rellax;
+			productName = Rellax;
+			productReference = 5A3CFF69212D97C200DF4870 /* Rellax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A3CFF7C212D97C500DF4870 /* RellaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3CFF94212D97C500DF4870 /* Build configuration list for PBXNativeTarget "RellaxTests" */;
+			buildPhases = (
+				5A3CFF79212D97C500DF4870 /* Sources */,
+				5A3CFF7A212D97C500DF4870 /* Frameworks */,
+				5A3CFF7B212D97C500DF4870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3CFF7F212D97C500DF4870 /* PBXTargetDependency */,
+			);
+			name = RellaxTests;
+			productName = RellaxTests;
+			productReference = 5A3CFF7D212D97C500DF4870 /* RellaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A3CFF87212D97C500DF4870 /* RellaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3CFF97212D97C500DF4870 /* Build configuration list for PBXNativeTarget "RellaxUITests" */;
+			buildPhases = (
+				5A3CFF84212D97C500DF4870 /* Sources */,
+				5A3CFF85212D97C500DF4870 /* Frameworks */,
+				5A3CFF86212D97C500DF4870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3CFF8A212D97C500DF4870 /* PBXTargetDependency */,
+			);
+			name = RellaxUITests;
+			productName = RellaxUITests;
+			productReference = 5A3CFF88212D97C500DF4870 /* RellaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A3CFF61212D97C200DF4870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Bogdan Pintilei";
+				TargetAttributes = {
+					5A3CFF68212D97C200DF4870 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5A3CFF7C212D97C500DF4870 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5A3CFF68212D97C200DF4870;
+					};
+					5A3CFF87212D97C500DF4870 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5A3CFF68212D97C200DF4870;
+					};
+				};
+			};
+			buildConfigurationList = 5A3CFF64212D97C200DF4870 /* Build configuration list for PBXProject "Rellax" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A3CFF60212D97C200DF4870;
+			productRefGroup = 5A3CFF6A212D97C200DF4870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A3CFF68212D97C200DF4870 /* Rellax */,
+				5A3CFF7C212D97C500DF4870 /* RellaxTests */,
+				5A3CFF87212D97C500DF4870 /* RellaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A3CFF67212D97C200DF4870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3CFF77212D97C500DF4870 /* LaunchScreen.storyboard in Resources */,
+				5A3CFF74212D97C500DF4870 /* Assets.xcassets in Resources */,
+				5A3CFF72212D97C200DF4870 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3CFF7B212D97C500DF4870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3CFF86212D97C500DF4870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A3CFF65212D97C200DF4870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3CFF6F212D97C200DF4870 /* ViewController.swift in Sources */,
+				5A3CFF6D212D97C200DF4870 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3CFF79212D97C500DF4870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3CFF82212D97C500DF4870 /* RellaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3CFF84212D97C500DF4870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3CFF8D212D97C500DF4870 /* RellaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A3CFF7F212D97C500DF4870 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3CFF68212D97C200DF4870 /* Rellax */;
+			targetProxy = 5A3CFF7E212D97C500DF4870 /* PBXContainerItemProxy */;
+		};
+		5A3CFF8A212D97C500DF4870 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3CFF68212D97C200DF4870 /* Rellax */;
+			targetProxy = 5A3CFF89212D97C500DF4870 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A3CFF70212D97C200DF4870 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3CFF71212D97C200DF4870 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A3CFF75212D97C500DF4870 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3CFF76212D97C500DF4870 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A3CFF8F212D97C500DF4870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A3CFF90212D97C500DF4870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A3CFF92212D97C500DF4870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3763SJ8DW;
+				INFOPLIST_FILE = Rellax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Rellax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A3CFF93212D97C500DF4870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3763SJ8DW;
+				INFOPLIST_FILE = Rellax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Rellax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A3CFF95212D97C500DF4870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3763SJ8DW;
+				INFOPLIST_FILE = RellaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.RellaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rellax.app/Rellax";
+			};
+			name = Debug;
+		};
+		5A3CFF96212D97C500DF4870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3763SJ8DW;
+				INFOPLIST_FILE = RellaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.RellaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rellax.app/Rellax";
+			};
+			name = Release;
+		};
+		5A3CFF98212D97C500DF4870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3763SJ8DW;
+				INFOPLIST_FILE = RellaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.RellaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rellax;
+			};
+			name = Debug;
+		};
+		5A3CFF99212D97C500DF4870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3763SJ8DW;
+				INFOPLIST_FILE = RellaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.RellaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rellax;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A3CFF64212D97C200DF4870 /* Build configuration list for PBXProject "Rellax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3CFF8F212D97C500DF4870 /* Debug */,
+				5A3CFF90212D97C500DF4870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3CFF91212D97C500DF4870 /* Build configuration list for PBXNativeTarget "Rellax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3CFF92212D97C500DF4870 /* Debug */,
+				5A3CFF93212D97C500DF4870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3CFF94212D97C500DF4870 /* Build configuration list for PBXNativeTarget "RellaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3CFF95212D97C500DF4870 /* Debug */,
+				5A3CFF96212D97C500DF4870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3CFF97212D97C500DF4870 /* Build configuration list for PBXNativeTarget "RellaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3CFF98212D97C500DF4870 /* Debug */,
+				5A3CFF99212D97C500DF4870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A3CFF61212D97C200DF4870 /* Project object */;
+}
