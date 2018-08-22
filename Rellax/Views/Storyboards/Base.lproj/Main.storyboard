@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s9x-HO-Mdq">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="pnu-8B-Xh0">
+            <objects>
+                <viewController id="s9x-HO-Mdq" customClass="HomeViewController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="td2-p5-ENA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meduza background" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-e5-eVS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-iV-Vis">
+                                <rect key="frame" x="139.66666666666666" y="358" width="96" height="96"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VyV-iV-Vis" secondAttribute="height" multiplier="1:1" id="qXI-u9-P87"/>
+                                    <constraint firstAttribute="width" constant="96" id="y6G-Up-Xlg"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="intro play button"/>
+                                <connections>
+                                    <action selector="showBrowseFlow:" destination="s9x-HO-Mdq" eventType="touchUpInside" id="7Nc-a4-T1v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiră adânc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-y8-fo4">
+                                <rect key="frame" x="16" y="717" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wrw-y8-fo4" firstAttribute="leading" secondItem="wyt-ye-8LB" secondAttribute="leading" constant="16" id="3Kn-JL-Leo"/>
+                            <constraint firstItem="wyt-ye-8LB" firstAttribute="bottom" secondItem="Wrw-y8-fo4" secondAttribute="bottom" constant="32" id="4da-RE-OCU"/>
+                            <constraint firstAttribute="bottom" secondItem="2bl-e5-eVS" secondAttribute="bottom" id="Uzh-zN-QeD"/>
+                            <constraint firstItem="VyV-iV-Vis" firstAttribute="centerY" secondItem="td2-p5-ENA" secondAttribute="centerY" id="Xv5-iF-5ow"/>
+                            <constraint firstItem="wyt-ye-8LB" firstAttribute="trailing" secondItem="Wrw-y8-fo4" secondAttribute="trailing" constant="16" id="f9M-NQ-TOP"/>
+                            <constraint firstItem="VyV-iV-Vis" firstAttribute="centerX" secondItem="td2-p5-ENA" secondAttribute="centerX" id="kYM-OR-TC6"/>
+                            <constraint firstItem="2bl-e5-eVS" firstAttribute="trailing" secondItem="wyt-ye-8LB" secondAttribute="trailing" id="lae-tw-lNE"/>
+                            <constraint firstItem="2bl-e5-eVS" firstAttribute="leading" secondItem="wyt-ye-8LB" secondAttribute="leading" id="okS-ac-tML"/>
+                            <constraint firstItem="2bl-e5-eVS" firstAttribute="top" secondItem="td2-p5-ENA" secondAttribute="top" id="w1t-Jb-HiF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wyt-ye-8LB"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="playButton" destination="VyV-iV-Vis" id="5te-nc-NrT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NrQ-YX-9FT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="549.01477832512319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intro play button" width="16" height="22"/>
+        <image name="meduza background" width="748" height="1332"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (5.0.0.beta.1)
+  - CHIPageControl (0.1.6):
+    - CHIPageControl/Aji (= 0.1.6)
+    - CHIPageControl/Aleppo (= 0.1.6)
+    - CHIPageControl/Chimayo (= 0.1.6)
+    - CHIPageControl/Fresno (= 0.1.6)
+    - CHIPageControl/Jalapeno (= 0.1.6)
+    - CHIPageControl/Jaloro (= 0.1.6)
+    - CHIPageControl/Paprika (= 0.1.6)
+    - CHIPageControl/Puya (= 0.1.6)
+  - CHIPageControl/Aji (0.1.6)
+  - CHIPageControl/Aleppo (0.1.6)
+  - CHIPageControl/Chimayo (0.1.6)
+  - CHIPageControl/Fresno (0.1.6)
+  - CHIPageControl/Jalapeno (0.1.6)
+  - CHIPageControl/Jaloro (0.1.6)
+  - CHIPageControl/Paprika (0.1.6)
+  - CHIPageControl/Puya (0.1.6)
+  - GradientCircularProgress (3.9.2)
+  - Hero (1.3.0)
+  - Jukebox (0.2.1)
+  - Kingfisher (4.8.1)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
+  - SoundWave (0.1.2)
+  - UPCarouselFlowLayout (1.1.1)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `alamofire5`)
+  - CHIPageControl
+  - GradientCircularProgress (from `https://github.com/keygx/GradientCircularProgress`)
+  - Hero
+  - Jukebox
+  - Kingfisher
+  - NVActivityIndicatorView
+  - SoundWave (from `https://github.com/BogdanPintilei/SoundWave.git`, branch `feature/addPlayFromFunctionality`)
+  - UPCarouselFlowLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CHIPageControl
+    - Hero
+    - Jukebox
+    - Kingfisher
+    - NVActivityIndicatorView
+    - UPCarouselFlowLayout
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: alamofire5
+    :git: https://github.com/Alamofire/Alamofire.git
+  GradientCircularProgress:
+    :git: https://github.com/keygx/GradientCircularProgress
+  SoundWave:
+    :branch: feature/addPlayFromFunctionality
+    :git: https://github.com/BogdanPintilei/SoundWave.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: d927d24f38f5b4bf3ae10fa8db4df2c5a2ef4ff2
+    :git: https://github.com/Alamofire/Alamofire.git
+  GradientCircularProgress:
+    :commit: c6d9733c343fdb858fa83ca59a2fa86a4a381fa2
+    :git: https://github.com/keygx/GradientCircularProgress
+  SoundWave:
+    :commit: 829850f94591077299457a4455ce6c5a050fd41a
+    :git: https://github.com/BogdanPintilei/SoundWave.git
+
+SPEC CHECKSUMS:
+  Alamofire: eafeeb206da2148045e57a5dc3c6a4acc65b9eb2
+  CHIPageControl: 21b85bb8c7d4d1d15fc4f353e1eb095eb75de5f1
+  GradientCircularProgress: 1a3ddccd88785d3d2f0782bb6f9012f018d2a308
+  Hero: 3eecd3fd62dd2425cbc7e35505c557b86d5a379e
+  Jukebox: 81db618ccd3a1cc9b154f4ae0f5c4b54638666dd
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  SoundWave: 507ae197534de7b86343472ae2699524ce2a4efc
+  UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
+
+PODFILE CHECKSUM: c96d08ae8b0d68f64249ecaecd68a283446e9459
+
+COCOAPODS: 1.5.3
