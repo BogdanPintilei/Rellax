@@ -25,7 +25,7 @@ class InformationCollectionViewCell: UICollectionViewCell {
     }
 
     private func customizeCell() {
-        view.backgroundColor = UIColor.AppColors.darkPurple
+        view.backgroundColor = UIColor.AppColors.darkBlue
     }
 
     private func customizeCellWithInformation() {

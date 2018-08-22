@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InformationCollectionViewCell" customModule="Mindfulness" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InformationCollectionViewCell" customModule="Rellax" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="279" height="262"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -31,11 +31,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22e-K4-yUt">
                                 <rect key="frame" x="16" y="209" width="247" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <color key="textColor" red="0.44" green="0.31" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.84299999999999997" green="0.84206491709999998" blue="0.84152227639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.44" green="0.31" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.048864403809999998" green="0.54418006779999994" blue="0.83141656090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LDh-5x-Xca" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dq0-Xl-xPI" secondAttribute="top" constant="32" id="2lv-ly-s5X"/>
                             <constraint firstAttribute="trailing" secondItem="LDh-5x-Xca" secondAttribute="trailing" constant="16" id="BZV-hy-tiY"/>

@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExerciseView" customModule="Mindfulness" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExerciseView" customModule="Rellax" customModuleProvider="target">
             <connections>
                 <outlet property="descriptionLabel" destination="bvA-Ir-Bpj" id="eGh-cN-gqP"/>
                 <outlet property="durationLabel" destination="EuD-Y7-w7T" id="5V8-MV-9UQ"/>
@@ -46,7 +46,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </imageView>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqB-Vn-CC5">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqB-Vn-CC5">
                             <rect key="frame" x="16" y="16" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Wnx-Vd-ET0"/>
@@ -71,13 +71,13 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-Nn-Lql">
                             <rect key="frame" x="16" y="486" width="160" height="48"/>
-                            <color key="backgroundColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.048864403809999998" green="0.54418006779999994" blue="0.83141656090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="160" id="tgM-8L-CJA"/>
                                 <constraint firstAttribute="height" constant="48" id="zQy-9G-UYU"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                            <state key="normal" title="Vreau să încep!">
+                            <state key="normal" title="Play Track">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>

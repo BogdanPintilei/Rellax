@@ -14,7 +14,7 @@
         <!--Player View Controller-->
         <scene sceneID="3Hr-yc-9fQ">
             <objects>
-                <viewController storyboardIdentifier="PlayerViewControllerStroyboardID" id="dcH-t6-yNH" customClass="PlayerViewController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayerViewControllerStroyboardID" id="dcH-t6-yNH" customClass="PlayerViewController" customModule="Rellax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bos-4x-Bn8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,13 +43,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6H-ye-LTN">
                                 <rect key="frame" x="155.5" y="494" width="64" height="64"/>
-                                <color key="backgroundColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.048864403809999998" green="0.54418006779999994" blue="0.83141656090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Aqz-xI-cFx"/>
                                     <constraint firstAttribute="width" secondItem="j6H-ye-LTN" secondAttribute="height" multiplier="1:1" id="CN7-1v-Qzq"/>
                                 </constraints>
                                 <state key="normal" image="play">
-                                    <color key="titleColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.048864403809999998" green="0.54418006779999994" blue="0.83141656090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="play:" destination="dcH-t6-yNH" eventType="touchUpInside" id="oEY-Og-zsw"/>
@@ -80,9 +80,9 @@
                                     <outletCollection property="gestureRecognizers" destination="FfW-xW-8YV" appends="YES" id="Xtq-sE-D2F"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-QO-Njt" customClass="PlayerVolumeSlider" customModule="Mindfulness" customModuleProvider="target">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-QO-Njt" customClass="PlayerVolumeSlider" customModule="Rellax" customModuleProvider="target">
                                 <rect key="frame" x="63.5" y="598" width="245" height="30"/>
-                                <color key="minimumTrackTintColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="0.64217679794520544" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
