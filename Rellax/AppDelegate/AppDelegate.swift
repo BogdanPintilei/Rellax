@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Robert Kovacs on 1/27/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit

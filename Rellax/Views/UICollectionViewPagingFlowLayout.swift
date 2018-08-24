@@ -1,9 +1,9 @@
 //
 //  UICollectionViewPagingFlowLayout.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by bogdan razvan on 28/01/2018.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
