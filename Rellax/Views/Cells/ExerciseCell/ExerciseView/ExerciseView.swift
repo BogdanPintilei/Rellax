@@ -46,7 +46,7 @@ class ExerciseView: UIView {
     }
 
     private func customizeUI() {
-        exerciseImageViewTint.backgroundColor = UIColor.AppColors.purpleMask
+        exerciseImageViewTint.backgroundColor = UIColor.AppColors.blueMask
         letsRollButton.setRoundFrameForLength()
     }
 

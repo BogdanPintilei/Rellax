@@ -851,15 +851,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E40C19D451E6B06E644D32A /* Pods-Rellax.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3763SJ8DW;
+				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Rellax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Rellax;
+				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Rellax-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -870,15 +869,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 279275F200FE6CE9E6C665CB /* Pods-Rellax.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3763SJ8DW;
+				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Rellax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Rellax;
+				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Rellax-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
