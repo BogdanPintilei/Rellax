@@ -14,14 +14,11 @@
         <!--Home View Controller-->
         <scene sceneID="pnu-8B-Xh0">
             <objects>
-                <viewController id="s9x-HO-Mdq" customClass="HomeViewController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s9x-HO-Mdq" customClass="HomeViewController" customModule="Rellax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="td2-p5-ENA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meduza background" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-e5-eVS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-iV-Vis">
                                 <rect key="frame" x="139.66666666666666" y="358" width="96" height="96"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,24 +32,20 @@
                                     <action selector="showBrowseFlow:" destination="s9x-HO-Mdq" eventType="touchUpInside" id="7Nc-a4-T1v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiră adânc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-y8-fo4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rellax you pet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-y8-fo4">
                                 <rect key="frame" x="16" y="717" width="343" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Wrw-y8-fo4" firstAttribute="leading" secondItem="wyt-ye-8LB" secondAttribute="leading" constant="16" id="3Kn-JL-Leo"/>
                             <constraint firstItem="wyt-ye-8LB" firstAttribute="bottom" secondItem="Wrw-y8-fo4" secondAttribute="bottom" constant="32" id="4da-RE-OCU"/>
-                            <constraint firstAttribute="bottom" secondItem="2bl-e5-eVS" secondAttribute="bottom" id="Uzh-zN-QeD"/>
                             <constraint firstItem="VyV-iV-Vis" firstAttribute="centerY" secondItem="td2-p5-ENA" secondAttribute="centerY" id="Xv5-iF-5ow"/>
                             <constraint firstItem="wyt-ye-8LB" firstAttribute="trailing" secondItem="Wrw-y8-fo4" secondAttribute="trailing" constant="16" id="f9M-NQ-TOP"/>
                             <constraint firstItem="VyV-iV-Vis" firstAttribute="centerX" secondItem="td2-p5-ENA" secondAttribute="centerX" id="kYM-OR-TC6"/>
-                            <constraint firstItem="2bl-e5-eVS" firstAttribute="trailing" secondItem="wyt-ye-8LB" secondAttribute="trailing" id="lae-tw-lNE"/>
-                            <constraint firstItem="2bl-e5-eVS" firstAttribute="leading" secondItem="wyt-ye-8LB" secondAttribute="leading" id="okS-ac-tML"/>
-                            <constraint firstItem="2bl-e5-eVS" firstAttribute="top" secondItem="td2-p5-ENA" secondAttribute="top" id="w1t-Jb-HiF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wyt-ye-8LB"/>
                     </view>
@@ -65,11 +58,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrQ-YX-9FT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="549.01477832512319"/>
+            <point key="canvasLocation" x="946" y="545"/>
         </scene>
     </scenes>
     <resources>
         <image name="intro play button" width="16" height="22"/>
-        <image name="meduza background" width="748" height="1332"/>
     </resources>
 </document>

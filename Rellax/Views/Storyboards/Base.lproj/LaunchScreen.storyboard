@@ -20,12 +20,13 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medusa" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-gz-FmE">
                                 <rect key="frame" x="64" y="241" width="286" height="254"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="254" id="c5H-s0-Bl3"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.029999999999999999" green="0.02" blue="0.13" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ujd-gz-FmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="5Rb-UF-lr4"/>
                             <constraint firstItem="Ujd-gz-FmE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xby-10-XDC"/>

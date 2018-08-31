@@ -8,35 +8,41 @@
 
 import Foundation
 import Kingfisher
-class LibraryViewModel {
 
+class LibraryViewModel {
+    
     var isLoading = Dynamic(false)
-    var isEmpty:Bool {
+    var contentWasLoaded = false
+    var isEmpty: Bool {
         return exerciseList.isEmpty
     }
+    
     var numberOfExercises: Int {
         return exerciseList.count
     }
     
     private var exerciseList = [Exercise]()
-
+    
     func loadExerciseList() {
-        isLoading.value = true
-        LoadingView.startLoadingAnimation(indicatorType: .regular)
-        APIClient.getExerciseList { (result) in
-            switch result {
-            case .failure(let error):
-                print(error)
-            case .success(let exerciseList):
-                self.exerciseList = exerciseList
+        if !contentWasLoaded {
+            isLoading.value = true
+            LoadingView.startLoadingAnimation(indicatorType: .regular)
+            APIClient.getExerciseList { (result) in
+                switch result {
+                case .failure(let error):
+                    print(error)
+                case .success(let exerciseList):
+                    self.exerciseList = exerciseList
+                }
+                LoadingView.stopLoadingAnimation(indicatorType: .regular)
+                self.isLoading.value = false
+                self.contentWasLoaded = true
             }
-            LoadingView.stopLoadingAnimation(indicatorType: .regular)
-            self.isLoading.value = false
         }
     }
-
+    
     func itemAt(index: Int) -> Exercise {
-        return index < numberOfExercises ?  exerciseList[index] :  Exercise()
+        return index < numberOfExercises ? exerciseList[index] : Exercise()
     }
     
 }

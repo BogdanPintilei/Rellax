@@ -38,12 +38,14 @@ class Navigator {
 
     func showInformationFlow(
         from viewController: UIViewController,
-        exerciseID: Int
+        exerciseID: Int,
+        imageURL: String
     ) {
         let nvc = AppStoryboard.Information.instance.instantiateViewController(withIdentifier: "InformationViewControllerStoryboardID") as! UINavigationController
         nvc.hero.modalAnimationType = .fade
         let vc = nvc.childViewControllers.first as! InformationViewController
         vc.exerciseID = exerciseID
+        vc.imageURL = imageURL
         viewController.present(nvc, animated: true, completion: nil)
     }
 

@@ -19,7 +19,7 @@ class LoadingView: UIView {
     static let indicatorView = NVActivityIndicatorView(
         frame: CGRect.zero,
         type: .ballScale,
-        color: UIColor.AppColors.pink,
+        color: UIColor.white,
         padding: 20
     )
 

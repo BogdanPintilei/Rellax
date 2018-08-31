@@ -7,26 +7,32 @@
 //
 
 import UIKit
+import Kingfisher
 
 class InformationViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var loadingView: UIView!
-
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    
     var viewModel = InformationViewModel()
     var exerciseID = 0
+    var imageURL = ""
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        customizeUI()
         initializeViewModel()
         setupCollectionView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        customizeUI()
+    }
+    
     @IBAction func dismiss(_ sender: Any) {
         LoadingView.stopLoadingAnimation(indicatorType: .regular)
         self.dismiss(animated: true, completion: nil)
@@ -35,6 +41,8 @@ class InformationViewController: UIViewController {
     private func customizeUI() {
         self.setNavigationBarTransparent()
         self.setNavigationBarFont(ofSize: GlobalVariables.navigationBarFontSize, andWeight: .bold, ofColor: .white)
+        backgroundImageView.kf.indicatorType = .activity
+        backgroundImageView.kf.setImage(with: URL(string: imageURL))
     }
 
     private func initializeViewModel() {

@@ -137,8 +137,8 @@ extension LibraryViewController: UICollectionViewDelegate, UICollectionViewDataS
 
 extension LibraryViewController: ExerciseViewDelegate {
     
-    func showInformationFlow(exerciseID: Int) {
-        Navigator.shared.showInformationFlow(from: self, exerciseID: exerciseID)
+    func showInformationFlow(exerciseID: Int, imageURL: String?) {
+        Navigator.shared.showInformationFlow(from: self, exerciseID: exerciseID, imageURL: imageURL!)
     }
     
     func showPlayerScreen() {

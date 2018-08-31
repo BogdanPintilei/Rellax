@@ -128,7 +128,7 @@ class PlayerViewController: UIViewController {
     }
 
     private func customizeVolumeSlider() {
-        let sliderImage = UIImage.circle(diameter: GlobalVariables.sliderHeight, color: UIColor.AppColors.pink)
+        let sliderImage = UIImage.circle(diameter: GlobalVariables.sliderHeight, color: UIColor.AppColors.darkBlue)
         volumeSlider.setThumbImage(sliderImage, for: .normal)
         volumeSlider.setThumbImage(sliderImage, for: .highlighted)
     }
@@ -186,7 +186,7 @@ extension PlayerViewController {
         audioVisualizationView.meteringLevelBarInterItem = 1.5
         audioVisualizationView.meteringLevelBarCornerRadius = 0.0
         audioVisualizationView.gradientStartColor = UIColor.AppColors.transparency75White
-        audioVisualizationView.gradientEndColor = UIColor.AppColors.pink
+        audioVisualizationView.gradientEndColor = UIColor.AppColors.darkBlue
         audioVisualizationView.audioVisualizationMode = .read
         audioVisualizationView.shouldDisplayBlock = true
         audioVisualizationView.meteringLevels = viewModel.handle(meteringLevels: exercise.meteringLevels!)

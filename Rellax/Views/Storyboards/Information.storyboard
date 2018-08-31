@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Știați că?-->
+        <!--Cool Facts-->
         <scene sceneID="B4Q-br-hhL">
             <objects>
-                <viewController id="geW-3n-Ost" customClass="InformationViewController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="geW-3n-Ost" customClass="InformationViewController" customModule="Rellax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wy1-Sp-w85">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InformationCollectionViewCellID" id="8K7-a0-36x" customClass="InformationCollectionViewCell" customModule="Mindfulness" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InformationCollectionViewCellID" id="8K7-a0-36x" customClass="InformationCollectionViewCell" customModule="Rellax" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="261"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -56,7 +56,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.038305207978614406" green="0.46901399287149514" blue="0.71727250647668395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BCd-IR-YfP" firstAttribute="top" secondItem="BzH-ZQ-A0j" secondAttribute="top" id="5U8-ur-wlf"/>
                             <constraint firstItem="FPK-z0-rhO" firstAttribute="centerY" secondItem="Wy1-Sp-w85" secondAttribute="centerY" id="BTF-AD-x97"/>
@@ -71,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BzH-ZQ-A0j"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Știați că?" id="ivm-tE-q4z">
+                    <navigationItem key="navigationItem" title="Cool Facts" id="ivm-tE-q4z">
                         <barButtonItem key="leftBarButtonItem" image="go back" id="Amr-fF-76Y">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -83,6 +83,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="backgroundImageView" destination="a1H-34-FBn" id="2Yc-vP-a3N"/>
                         <outlet property="collectionView" destination="BCd-IR-YfP" id="tU2-oL-tz0"/>
                         <outlet property="loadingView" destination="FPK-z0-rhO" id="97o-4D-X1T"/>
                     </connections>
@@ -94,7 +95,7 @@
         <!--Information Details View Controller-->
         <scene sceneID="Ive-J6-Bbn">
             <objects>
-                <viewController storyboardIdentifier="InformationDetailsViewControllerStoryboardID" id="A73-mk-Mfc" customClass="InformationDetailsViewController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationDetailsViewControllerStoryboardID" id="A73-mk-Mfc" customClass="InformationDetailsViewController" customModule="Rellax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="957-cS-kwg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,7 +219,7 @@
         <!--Infotmation Navigation Controller-->
         <scene sceneID="q79-p1-nK6">
             <objects>
-                <navigationController storyboardIdentifier="InformationViewControllerStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="VST-PQ-adQ" customClass="InfotmationNavigationController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="InformationViewControllerStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="VST-PQ-adQ" customClass="InfotmationNavigationController" customModule="Rellax" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HIx-XK-FFJ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

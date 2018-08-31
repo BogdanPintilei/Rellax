@@ -11,7 +11,7 @@ import Hero
 import Kingfisher
 
 protocol ExerciseViewDelegate: class {
-    func showInformationFlow(exerciseID: Int)
+    func showInformationFlow(exerciseID: Int, imageURL: String?)
     func showPlayerScreen()
 }
 
@@ -42,7 +42,7 @@ class ExerciseView: UIView {
     }
 
     @IBAction func getInformation(_ sender: Any) {
-        delegate?.showInformationFlow(exerciseID: exercise.id!)
+        delegate?.showInformationFlow(exerciseID: exercise.id!, imageURL: exercise.imageURL!)
     }
 
     private func customizeUI() {
