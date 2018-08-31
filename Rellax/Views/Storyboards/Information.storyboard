@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meduza background" translatesAutoresizingMaskIntoConstraints="NO" id="a1H-34-FBn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1H-34-FBn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPK-z0-rhO">
@@ -249,6 +249,5 @@
     <resources>
         <image name="go back" width="25" height="18"/>
         <image name="masca stiati ca detaliat" width="375" height="307"/>
-        <image name="meduza background" width="748" height="1332"/>
     </resources>
 </document>
