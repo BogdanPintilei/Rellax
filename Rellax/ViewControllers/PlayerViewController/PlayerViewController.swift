@@ -128,6 +128,7 @@ class PlayerViewController: UIViewController {
         playButton.setRoundFrame()
         customizeVolumeSlider()
         exerciseBackgroundImageView.kf.setImage(with: URL(string: exercise.imageURL!))
+        exerciseBackgroundImageView.addBlurEffect(withStyle: .light)
     }
 
     private func customizeVolumeSlider() {
