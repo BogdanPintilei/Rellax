@@ -132,7 +132,7 @@ class PlayerViewController: UIViewController {
     }
 
     private func customizeVolumeSlider() {
-        let sliderImage = UIImage.circle(diameter: GlobalVariables.sliderHeight, color: UIColor.AppColors.darkBlue)
+        let sliderImage = UIImage.circle(diameter: GlobalVariables.sliderHeight, color: UIColor.AppColors.blue)
         volumeSlider.setThumbImage(sliderImage, for: .normal)
         volumeSlider.setThumbImage(sliderImage, for: .highlighted)
     }
@@ -157,6 +157,17 @@ class PlayerViewController: UIViewController {
         audioButtonLoadingView.isHidden = !state
         setButtonImage()
     }
+    
+    private func progressForward() {
+        currentTime + GlobalVariables.playerProgress <= audioDuration ? setAudioTime(at: currentTime + GlobalVariables.playerProgress) : setAudioTime(at: audioDuration - 1)
+        audioVizualizationSlider.isSelected = false
+    }
+    
+    private func progressBackward() {
+        currentTime - GlobalVariables.playerProgress > 0 ? setAudioTime(at: currentTime - GlobalVariables.playerProgress) : setAudioTime(at: 0)
+        audioVizualizationSlider.isSelected = false
+    }
+
 
 }
 
@@ -169,7 +180,7 @@ extension PlayerViewController {
     }
 
     private func initializeViewModel() {
-        viewModel.initializeAudio(audioURL: exercise.audioURL!)
+        viewModel.initializeAudio(audioURL: exercise.audioURL!, title: exercise.title!)
         bindViewModel()
     }
 
@@ -190,7 +201,7 @@ extension PlayerViewController {
         audioVisualizationView.meteringLevelBarInterItem = 1.5
         audioVisualizationView.meteringLevelBarCornerRadius = 0.0
         audioVisualizationView.gradientStartColor = UIColor.AppColors.transparency75White
-        audioVisualizationView.gradientEndColor = UIColor.AppColors.darkBlue
+        audioVisualizationView.gradientEndColor = UIColor.AppColors.blue
         audioVisualizationView.audioVisualizationMode = .read
         audioVisualizationView.shouldDisplayBlock = true
         audioVisualizationView.meteringLevels = viewModel.handle(meteringLevels: exercise.meteringLevels!)
@@ -323,3 +334,31 @@ extension PlayerViewController {
     }
 
 }
+
+// Track remote control events
+
+extension PlayerViewController {
+    
+    override func remoteControlReceived(with event: UIEvent?) {
+        if event?.type == .remoteControl {
+            switch event!.subtype {
+            case .remoteControlPlay:
+                viewModel.playOrPauseAudio()
+            case .remoteControlPause:
+                viewModel.playOrPauseAudio()
+            case .remoteControlNextTrack:
+                viewModel.playOrPauseAudio()
+                progressForward()
+                viewModel.playOrPauseAudio()
+            case .remoteControlPreviousTrack:
+                viewModel.playOrPauseAudio()
+                progressBackward()
+                viewModel.playOrPauseAudio()
+            default:
+                break
+            }
+        }
+    }
+    
+}
+

@@ -43,13 +43,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6H-ye-LTN">
                                 <rect key="frame" x="155.5" y="494" width="64" height="64"/>
-                                <color key="backgroundColor" red="0.048864403809999998" green="0.54418006779999994" blue="0.83141656090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Aqz-xI-cFx"/>
                                     <constraint firstAttribute="width" secondItem="j6H-ye-LTN" secondAttribute="height" multiplier="1:1" id="CN7-1v-Qzq"/>
                                 </constraints>
                                 <state key="normal" image="play">
-                                    <color key="titleColor" red="0.048864403809999998" green="0.54418006779999994" blue="0.83141656090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="play:" destination="dcH-t6-yNH" eventType="touchUpInside" id="oEY-Og-zsw"/>
@@ -148,6 +148,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3xs-AI-ZkX" firstAttribute="leading" secondItem="AjK-zm-dFE" secondAttribute="leading" constant="8" id="0mC-sa-Lw0"/>
                             <constraint firstItem="YQq-eB-Hit" firstAttribute="top" secondItem="bos-4x-Bn8" secondAttribute="top" id="3qE-R8-hAf"/>

@@ -59,6 +59,7 @@
 		5A739999212DADAA0007E429 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A739967212DADAA0007E429 /* SegueHandler.swift */; };
 		5A73999A212DADAA0007E429 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A739968212DADAA0007E429 /* Navigator.swift */; };
 		5A9254C021403B4400F140B9 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9254BF21403B4300F140B9 /* UIImageView.swift */; };
+		5A9254C221404B1A00F140B9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9254C121404B1A00F140B9 /* Date.swift */; };
 		5CA4E7291E7AC053D028AFE6 /* Pods_Rellax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380C44E07DB933B551D2C22F /* Pods_Rellax.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 		5A739967212DADAA0007E429 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 		5A739968212DADAA0007E429 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		5A9254BF21403B4300F140B9 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		5A9254C121404B1A00F140B9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F71CFBE23BE2F99BF6FD83DC /* Pods_RellaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RellaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -236,6 +238,7 @@
 				5A739923212DADA90007E429 /* UIVIewControleler.swift */,
 				5A739924212DADA90007E429 /* UIImage.swift */,
 				5A9254BF21403B4300F140B9 /* UIImageView.swift */,
+				5A9254C121404B1A00F140B9 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				5A739996212DADAA0007E429 /* AppStoryboard.swift in Sources */,
 				5A9254C021403B4400F140B9 /* UIImageView.swift in Sources */,
 				5A73998D212DADAA0007E429 /* Fact.swift in Sources */,
+				5A9254C221404B1A00F140B9 /* Date.swift in Sources */,
 				5A739991212DADAA0007E429 /* Dynamic.swift in Sources */,
 				5A739997212DADAA0007E429 /* LoadingView.swift in Sources */,
 				5A739990212DADAA0007E429 /* Keys.swift in Sources */,

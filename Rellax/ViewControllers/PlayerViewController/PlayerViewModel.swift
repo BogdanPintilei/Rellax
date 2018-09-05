@@ -21,8 +21,8 @@ class PlayerViewModel {
     var isLoading = Dynamic<Bool>(false)
     var isReady = Dynamic<Bool>(false)
 
-    func initializeAudio(audioURL: String) {
-        audioPlayer = AudioPlayer(url: audioURL)
+    func initializeAudio(audioURL: String, title: String) {
+        audioPlayer = AudioPlayer(url: audioURL, title: title)
         bindAudioPlayer()
     }
 

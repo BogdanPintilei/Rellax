@@ -54,6 +54,7 @@ class ExerciseView: UIView {
         exerciseImageView.kf.indicatorType = .activity
         exerciseImageView.kf.setImage(with: URL(string: exercise.imageURL!))
         durationLabel.text = "\(String(describing: exercise.duration!))"
+        durationLabel.text =  Date.secondsToString(seconds: Int(exercise.duration!))
         titleLabel.text = exercise.title
         descriptionLabel.text = exercise.exerciseDescription
     }

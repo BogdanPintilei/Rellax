@@ -24,7 +24,6 @@ class APIClient {
         method: HTTPMethod,
         params: [String: Any]?,
         completion: @escaping(DataResponse<T>) -> Void) {
-
         let requestParams = params ?? [String: Any]()
         let headers: HTTPHeaders = ["token": SessionManager.deviceToken]
 
