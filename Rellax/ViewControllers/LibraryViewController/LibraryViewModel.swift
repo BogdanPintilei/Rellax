@@ -32,7 +32,7 @@ class LibraryViewModel {
                 case .failure(let error):
                     print(error)
                 case .success(let exerciseList):
-                    self.exerciseList = exerciseList
+                    self.exerciseList = exerciseList.reversed()
                 }
                 LoadingView.stopLoadingAnimation(indicatorType: .regular)
                 self.isLoading.value = false

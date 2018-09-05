@@ -23,13 +23,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="279" height="262"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="19" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-5x-Xca">
-                                <rect key="frame" x="16" y="150.5" width="247" height="26.5"/>
+                                <rect key="frame" x="16" y="158.5" width="247" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22e-K4-yUt">
-                                <rect key="frame" x="16" y="209" width="247" height="21"/>
+                                <rect key="frame" x="16" y="217" width="247" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.84299999999999997" green="0.84206491709999998" blue="0.84152227639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -37,12 +37,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LDh-5x-Xca" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dq0-Xl-xPI" secondAttribute="top" constant="32" id="2lv-ly-s5X"/>
+                            <constraint firstItem="LDh-5x-Xca" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dq0-Xl-xPI" secondAttribute="top" constant="16" id="2lv-ly-s5X"/>
                             <constraint firstAttribute="trailing" secondItem="LDh-5x-Xca" secondAttribute="trailing" constant="16" id="BZV-hy-tiY"/>
                             <constraint firstItem="LDh-5x-Xca" firstAttribute="leading" secondItem="dq0-Xl-xPI" secondAttribute="leading" constant="16" id="GLf-I6-veC"/>
                             <constraint firstItem="22e-K4-yUt" firstAttribute="leading" secondItem="dq0-Xl-xPI" secondAttribute="leading" constant="16" id="TQs-AX-e9G"/>
                             <constraint firstItem="22e-K4-yUt" firstAttribute="top" secondItem="LDh-5x-Xca" secondAttribute="bottom" constant="32" id="WRp-EI-BvX"/>
-                            <constraint firstAttribute="bottom" secondItem="22e-K4-yUt" secondAttribute="bottom" constant="32" id="rKT-eG-b4H"/>
+                            <constraint firstAttribute="bottom" secondItem="22e-K4-yUt" secondAttribute="bottom" constant="24" id="rKT-eG-b4H"/>
                             <constraint firstAttribute="trailing" secondItem="22e-K4-yUt" secondAttribute="trailing" constant="16" id="sc0-BP-mIc"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
