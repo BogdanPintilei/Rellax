@@ -11,8 +11,8 @@ import Alamofire
 
 extension APIClient {
 
-    static func getExerciseList(completion: @escaping(Result<[Exercise]>) -> Void) {
-        let path = "exercises"
+    static func getExerciseList(completion: @escaping(Result<[Track]>) -> Void) {
+        let path = "tracks"
         get(path: path) { (result) in
             completion(result.result)
         }

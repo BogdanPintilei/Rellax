@@ -25,7 +25,7 @@ class ExerciseView: UIView {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var letsRollButton: UIButton!
 
-    var exercise: Exercise! { didSet { customizeViewWithExercise() } }
+    var exercise: Track! { didSet { customizeViewWithExercise() } }
     var heroIDIndex: Int! { didSet { setHeroElementsID() } }
     weak var delegate: ExerciseViewDelegate?
     
@@ -52,11 +52,17 @@ class ExerciseView: UIView {
 
     private func customizeViewWithExercise() {
         exerciseImageView.kf.indicatorType = .activity
-        exerciseImageView.kf.setImage(with: URL(string: exercise.imageURL!))
-        durationLabel.text = "\(String(describing: exercise.duration!))"
+        guard let imageURL = exercise.imageURL else {
+            return
+        }
+        exerciseImageView.kf.setImage(with: URL(string: imageURL))
+        guard let duration = exercise.duration else {
+            return
+        }
+        durationLabel.text = "\(String(describing: duration))"
         durationLabel.text =  Date.secondsToString(seconds: Int(exercise.duration!))
         titleLabel.text = exercise.title
-        descriptionLabel.text = exercise.exerciseDescription
+        descriptionLabel.text = exercise.trackDescription
     }
 
     private func setHeroElementsID() {

@@ -12,7 +12,7 @@ import Alamofire
 extension APIClient {
     
     static func getFacts(exerciseID: Int, completion: @escaping(Result<[Fact]>) -> Void) {
-        let path = "exercises/\(exerciseID)/facts"
+        let path = "tracks/\(exerciseID)/facts"
         get(path: path) { (result) in
             completion(result.result)
         }

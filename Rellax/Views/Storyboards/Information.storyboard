@@ -105,7 +105,7 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4V0-pC-PGc">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="487.33333333333331"/>
-                                        <color key="backgroundColor" red="0.44" green="0.31" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rZ-O2-wsz">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -139,7 +139,7 @@
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yed-wD-F4y">
                                                         <rect key="frame" x="147.66666666666666" y="79.333333333333314" width="80" height="2"/>
-                                                        <color key="backgroundColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.066666666669999999" green="0.66274509800000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="9m7-PH-Gmp"/>
                                                             <constraint firstAttribute="height" constant="2" id="R8y-pL-Dyo"/>
@@ -225,7 +225,7 @@
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666666666666" green="0.66274509803921566" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>

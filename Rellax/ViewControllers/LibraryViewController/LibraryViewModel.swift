@@ -21,7 +21,7 @@ class LibraryViewModel {
         return exerciseList.count
     }
     
-    private var exerciseList = [Exercise]()
+    private var exerciseList = [Track]()
     
     func loadExerciseList() {
         if !contentWasLoaded {
@@ -41,8 +41,8 @@ class LibraryViewModel {
         }
     }
     
-    func itemAt(index: Int) -> Exercise {
-        return index < numberOfExercises ? exerciseList[index] : Exercise()
+    func itemAt(index: Int) -> Track {
+        return index < numberOfExercises ? exerciseList[index] : Track()
     }
     
 }

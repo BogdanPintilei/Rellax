@@ -23,7 +23,7 @@ class Navigator {
 
     func presentPlayer(
         from viewController: UIViewController,
-        exercise: Exercise,
+        exercise: Track,
         labelHeroID: String,
         letsRollButtonHeroID: String,
         viewHeroID: String

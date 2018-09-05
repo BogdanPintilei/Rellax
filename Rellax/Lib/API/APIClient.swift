@@ -37,7 +37,7 @@ class APIClient {
     }
 
     private static func url(from string: String) -> String {
-        return "https://mind-fullness.herokuapp.com/api/v1/" + string
+        return "https://rellax-app.herokuapp.com/api/v1/" + string
     }
 
 }

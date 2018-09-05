@@ -35,7 +35,10 @@ class InformationDetailsViewController: UIViewController {
 
     private func fillInFactData() {
         backgroundImageView.kf.indicatorType = .activity
-        backgroundImageView.kf.setImage(with: URL(string: fact.imageURL!))
+        guard let imageURL = fact.imageURL else {
+            return
+        }
+        backgroundImageView.kf.setImage(with: URL(string: imageURL))
         informationTitleLabel.text = fact.title
         informationContentLabel.text = fact.content
     }

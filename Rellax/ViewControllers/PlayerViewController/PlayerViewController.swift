@@ -36,7 +36,7 @@ class PlayerViewController: UIViewController {
     var audioDuration = TimeInterval(0.0)
     var isPlaying = false
     var isLoading = false
-    var exercise = Exercise()
+    var exercise = Track()
     var viewModel = PlayerViewModel()
     let volumeView = MPVolumeView(frame: .zero)
     var timer: Timer!

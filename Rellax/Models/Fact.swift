@@ -35,10 +35,10 @@ class Fact: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case id
-        case title
-        case category
-        case content
-        case imageURL = "image_url"
+        case title = "fact_title"
+        case category = "fact_category"
+        case content = "fact_content"
+        case imageURL = "fact_image"
     }
     
     required init(from decoder: Decoder) throws {

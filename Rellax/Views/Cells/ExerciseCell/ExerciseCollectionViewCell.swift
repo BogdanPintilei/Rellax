@@ -12,6 +12,6 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var exerciseView: ExerciseView!
     
-    var exercise: Exercise! { didSet { exerciseView.exercise = exercise } }
+    var exercise: Track! { didSet { exerciseView.exercise = exercise } }
     
 }
