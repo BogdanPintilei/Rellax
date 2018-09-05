@@ -197,6 +197,7 @@
                         <outlet property="audioVisualizationView" destination="urG-DC-a1c" id="y9e-FE-dtK"/>
                         <outlet property="audioVizualizationSlider" destination="FuA-1r-R7b" id="m92-Gx-3ug"/>
                         <outlet property="currentTimeIndicatorLabel" destination="3xs-AI-ZkX" id="PAx-0L-1uc"/>
+                        <outlet property="exerciseBackgroundImageView" destination="YQq-eB-Hit" id="fST-cs-wZx"/>
                         <outlet property="exerciseTitleLabel" destination="6j1-oR-anU" id="WKZ-qK-NHZ"/>
                         <outlet property="playButton" destination="j6H-ye-LTN" id="GwG-A1-tk4"/>
                         <outlet property="previousButton" destination="rEY-Ub-9Cu" id="sUo-Pb-JYr"/>

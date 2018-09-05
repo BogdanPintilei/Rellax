@@ -14,7 +14,7 @@ public struct CircularSpinnerStyle: StyleProperty {
     public var arcLineWidth: CGFloat = 2
     public var baseLineWidth: CGFloat? = 2
     public var startArcColor: UIColor = UIColor.clear
-    public var endArcColor: UIColor = UIColor.AppColors.pink
+    public var endArcColor: UIColor = UIColor.white
     public var backgroundStyle: BackgroundStyles = .none
 
     public var baseArcColor: UIColor? = nil

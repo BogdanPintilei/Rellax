@@ -9,6 +9,7 @@
 import UIKit
 import SoundWave
 import MediaPlayer
+import Kingfisher
 
 class PlayerViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class PlayerViewController: UIViewController {
     @IBOutlet var audioButtonLoadingView: UIView!
     @IBOutlet var previousLongPressGesture: UILongPressGestureRecognizer!
     @IBOutlet var skipLongPressGesture: UILongPressGestureRecognizer!
+    @IBOutlet weak var exerciseBackgroundImageView: UIImageView!
     
     var canStart = true
 
@@ -125,6 +127,7 @@ class PlayerViewController: UIViewController {
         initializeSoundWave()
         playButton.setRoundFrame()
         customizeVolumeSlider()
+        exerciseBackgroundImageView.kf.setImage(with: URL(string: exercise.imageURL!))
     }
 
     private func customizeVolumeSlider() {
