@@ -1,9 +1,9 @@
 //
 //  PlayerViewModel.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/3/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import Foundation
@@ -21,8 +21,8 @@ class PlayerViewModel {
     var isLoading = Dynamic<Bool>(false)
     var isReady = Dynamic<Bool>(false)
 
-    func initializeAudio(audioURL: String) {
-        audioPlayer = AudioPlayer(url: audioURL)
+    func initializeAudio(audioURL: String, title: String) {
+        audioPlayer = AudioPlayer(url: audioURL, title: title)
         bindAudioPlayer()
     }
 

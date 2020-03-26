@@ -1,9 +1,9 @@
 //
 //  ExerciseView.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/4/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import Hero
 import Kingfisher
 
 protocol ExerciseViewDelegate: class {
-    func showInformationFlow(exerciseID: Int)
+    func showInformationFlow(exerciseID: Int, imageURL: String?)
     func showPlayerScreen()
 }
 
@@ -25,7 +25,7 @@ class ExerciseView: UIView {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var letsRollButton: UIButton!
 
-    var exercise: Exercise! { didSet { customizeViewWithExercise() } }
+    var exercise: Track! { didSet { customizeViewWithExercise() } }
     var heroIDIndex: Int! { didSet { setHeroElementsID() } }
     weak var delegate: ExerciseViewDelegate?
     
@@ -42,20 +42,27 @@ class ExerciseView: UIView {
     }
 
     @IBAction func getInformation(_ sender: Any) {
-        delegate?.showInformationFlow(exerciseID: exercise.id!)
+        delegate?.showInformationFlow(exerciseID: exercise.id!, imageURL: exercise.imageURL!)
     }
 
     private func customizeUI() {
-        exerciseImageViewTint.backgroundColor = UIColor.AppColors.purpleMask
+        exerciseImageViewTint.backgroundColor = UIColor.AppColors.blueMask
         letsRollButton.setRoundFrameForLength()
     }
 
     private func customizeViewWithExercise() {
         exerciseImageView.kf.indicatorType = .activity
-        exerciseImageView.kf.setImage(with: URL(string: exercise.imageURL!))
-        durationLabel.text = "\(String(describing: exercise.duration!))"
+        guard let imageURL = exercise.imageURL else {
+            return
+        }
+        exerciseImageView.kf.setImage(with: URL(string: imageURL))
+        guard let duration = exercise.duration else {
+            return
+        }
+        durationLabel.text = "\(String(describing: duration))"
+        durationLabel.text =  Date.secondsToString(seconds: Int(exercise.duration!))
         titleLabel.text = exercise.title
-        descriptionLabel.text = exercise.exerciseDescription
+        descriptionLabel.text = exercise.trackDescription
     }
 
     private func setHeroElementsID() {

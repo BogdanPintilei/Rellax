@@ -1,9 +1,9 @@
 //
 //  InformationDetailsViewController.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/3/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
@@ -35,7 +35,10 @@ class InformationDetailsViewController: UIViewController {
 
     private func fillInFactData() {
         backgroundImageView.kf.indicatorType = .activity
-        backgroundImageView.kf.setImage(with: URL(string: fact.imageURL!))
+        guard let imageURL = fact.imageURL else {
+            return
+        }
+        backgroundImageView.kf.setImage(with: URL(string: imageURL))
         informationTitleLabel.text = fact.title
         informationContentLabel.text = fact.content
     }

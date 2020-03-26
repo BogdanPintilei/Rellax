@@ -1,9 +1,9 @@
 //
 //  Information.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/11/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
@@ -35,10 +35,10 @@ class Fact: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case id
-        case title
-        case category
-        case content
-        case imageURL = "image_url"
+        case title = "fact_title"
+        case category = "fact_category"
+        case content = "fact_content"
+        case imageURL = "fact_image"
     }
     
     required init(from decoder: Decoder) throws {

@@ -1,9 +1,9 @@
 //
 //  Navigator.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/9/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
@@ -23,7 +23,7 @@ class Navigator {
 
     func presentPlayer(
         from viewController: UIViewController,
-        exercise: Exercise,
+        exercise: Track,
         labelHeroID: String,
         letsRollButtonHeroID: String,
         viewHeroID: String
@@ -38,12 +38,14 @@ class Navigator {
 
     func showInformationFlow(
         from viewController: UIViewController,
-        exerciseID: Int
+        exerciseID: Int,
+        imageURL: String
     ) {
         let nvc = AppStoryboard.Information.instance.instantiateViewController(withIdentifier: "InformationViewControllerStoryboardID") as! UINavigationController
         nvc.hero.modalAnimationType = .fade
         let vc = nvc.childViewControllers.first as! InformationViewController
         vc.exerciseID = exerciseID
+        vc.imageURL = imageURL
         viewController.present(nvc, animated: true, completion: nil)
     }
 

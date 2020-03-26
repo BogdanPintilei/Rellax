@@ -14,7 +14,7 @@
         <!--Library View Controller-->
         <scene sceneID="fda-7m-Adc">
             <objects>
-                <viewController storyboardIdentifier="LibraryViewControllerStoryboardID" id="c3H-ke-gAG" customClass="LibraryViewController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LibraryViewControllerStoryboardID" id="c3H-ke-gAG" customClass="LibraryViewController" customModule="Rellax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuS-Qg-8Jj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,14 +40,14 @@
                                     </userDefinedRuntimeAttributes>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exerciseCollectionViewCellID" id="xWl-ja-DY9" customClass="ExerciseCollectionViewCell" customModule="Mindfulness" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exerciseCollectionViewCellID" id="xWl-ja-DY9" customClass="ExerciseCollectionViewCell" customModule="Rellax" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="16.666666666666668" width="342" height="539"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="539"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zc8-lR-u6R" customClass="ExerciseView" customModule="Mindfulness" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zc8-lR-u6R" customClass="ExerciseView" customModule="Rellax" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="342" height="539"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.44" green="0.31" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="foq-7s-Vt9" firstAttribute="top" secondItem="746-TL-JO9" secondAttribute="bottom" constant="32" id="AIl-KA-7le"/>
                             <constraint firstItem="y8w-lP-tXW" firstAttribute="bottom" secondItem="foq-7s-Vt9" secondAttribute="bottom" constant="24" id="AU3-0W-BAW"/>

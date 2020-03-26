@@ -1,9 +1,9 @@
 //
 //  APIClient.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/17/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import Alamofire
@@ -24,7 +24,6 @@ class APIClient {
         method: HTTPMethod,
         params: [String: Any]?,
         completion: @escaping(DataResponse<T>) -> Void) {
-
         let requestParams = params ?? [String: Any]()
         let headers: HTTPHeaders = ["token": SessionManager.deviceToken]
 
@@ -38,7 +37,7 @@ class APIClient {
     }
 
     private static func url(from string: String) -> String {
-        return "https://mind-fullness.herokuapp.com/api/v1/" + string
+        return "https://rellax-app.herokuapp.com/api/v1/" + string
     }
 
 }

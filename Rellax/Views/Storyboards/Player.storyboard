@@ -14,12 +14,12 @@
         <!--Player View Controller-->
         <scene sceneID="3Hr-yc-9fQ">
             <objects>
-                <viewController storyboardIdentifier="PlayerViewControllerStroyboardID" id="dcH-t6-yNH" customClass="PlayerViewController" customModule="Mindfulness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayerViewControllerStroyboardID" id="dcH-t6-yNH" customClass="PlayerViewController" customModule="Rellax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bos-4x-Bn8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meduza background" translatesAutoresizingMaskIntoConstraints="NO" id="YQq-eB-Hit">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YQq-eB-Hit">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rku-rh-ve0">
@@ -43,13 +43,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6H-ye-LTN">
                                 <rect key="frame" x="155.5" y="494" width="64" height="64"/>
-                                <color key="backgroundColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Aqz-xI-cFx"/>
                                     <constraint firstAttribute="width" secondItem="j6H-ye-LTN" secondAttribute="height" multiplier="1:1" id="CN7-1v-Qzq"/>
                                 </constraints>
                                 <state key="normal" image="play">
-                                    <color key="titleColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="play:" destination="dcH-t6-yNH" eventType="touchUpInside" id="oEY-Og-zsw"/>
@@ -80,9 +80,9 @@
                                     <outletCollection property="gestureRecognizers" destination="FfW-xW-8YV" appends="YES" id="Xtq-sE-D2F"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-QO-Njt" customClass="PlayerVolumeSlider" customModule="Mindfulness" customModuleProvider="target">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-QO-Njt" customClass="PlayerVolumeSlider" customModule="Rellax" customModuleProvider="target">
                                 <rect key="frame" x="63.5" y="598" width="245" height="30"/>
-                                <color key="minimumTrackTintColor" red="1" green="0.23999999999999999" blue="0.44" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="0.64217679794520544" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -148,6 +148,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="0.065135576910000006" green="0.66196763089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3xs-AI-ZkX" firstAttribute="leading" secondItem="AjK-zm-dFE" secondAttribute="leading" constant="8" id="0mC-sa-Lw0"/>
                             <constraint firstItem="YQq-eB-Hit" firstAttribute="top" secondItem="bos-4x-Bn8" secondAttribute="top" id="3qE-R8-hAf"/>
@@ -197,6 +198,7 @@
                         <outlet property="audioVisualizationView" destination="urG-DC-a1c" id="y9e-FE-dtK"/>
                         <outlet property="audioVizualizationSlider" destination="FuA-1r-R7b" id="m92-Gx-3ug"/>
                         <outlet property="currentTimeIndicatorLabel" destination="3xs-AI-ZkX" id="PAx-0L-1uc"/>
+                        <outlet property="exerciseBackgroundImageView" destination="YQq-eB-Hit" id="fST-cs-wZx"/>
                         <outlet property="exerciseTitleLabel" destination="6j1-oR-anU" id="WKZ-qK-NHZ"/>
                         <outlet property="playButton" destination="j6H-ye-LTN" id="GwG-A1-tk4"/>
                         <outlet property="previousButton" destination="rEY-Ub-9Cu" id="sUo-Pb-JYr"/>
@@ -225,7 +227,6 @@
         <image name="backward arrows" width="28" height="19"/>
         <image name="forward arrows" width="28" height="19"/>
         <image name="go back" width="25" height="18"/>
-        <image name="meduza background" width="749" height="1333"/>
         <image name="play" width="18" height="21"/>
         <image name="volume controler loud" width="19" height="10"/>
         <image name="volume controller mute" width="9" height="10"/>

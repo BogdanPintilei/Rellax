@@ -1,9 +1,9 @@
 //
 //  AudioPlayer.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/19/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
@@ -25,11 +25,16 @@ class AudioPlayer: NSObject, JukeboxDelegate {
     }
 
     init(
-        url: String? = ""
-    ) {
+        url: String? = "",
+        title: String? = "Rellax"
+        ) {
         super.init()
-        jukebox = Jukebox(delegate: self, items: [JukeboxItem(URL: URL(string: url!)!)])
+        let jukeboxitem = JukeboxItem(URL: URL(string: url!)!)
+        jukeboxitem.localTitle = title
+        jukebox = Jukebox(delegate: self, items:[jukeboxitem])
+        UIApplication.shared.beginReceivingRemoteControlEvents()
     }
+
 
     func play() {
         switch jukebox.state {

@@ -1,9 +1,9 @@
 //
 //  ExerciseCollectionViewCell.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/4/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +12,6 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var exerciseView: ExerciseView!
     
-    var exercise: Exercise! { didSet { exerciseView.exercise = exercise } }
+    var exercise: Track! { didSet { exerciseView.exercise = exercise } }
     
 }

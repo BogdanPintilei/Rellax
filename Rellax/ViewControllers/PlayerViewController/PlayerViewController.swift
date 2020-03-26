@@ -1,14 +1,15 @@
 //
 //  PlayerViewController.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/3/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
 import SoundWave
 import MediaPlayer
+import Kingfisher
 
 class PlayerViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class PlayerViewController: UIViewController {
     @IBOutlet var audioButtonLoadingView: UIView!
     @IBOutlet var previousLongPressGesture: UILongPressGestureRecognizer!
     @IBOutlet var skipLongPressGesture: UILongPressGestureRecognizer!
+    @IBOutlet weak var exerciseBackgroundImageView: UIImageView!
     
     var canStart = true
 
@@ -34,7 +36,7 @@ class PlayerViewController: UIViewController {
     var audioDuration = TimeInterval(0.0)
     var isPlaying = false
     var isLoading = false
-    var exercise = Exercise()
+    var exercise = Track()
     var viewModel = PlayerViewModel()
     let volumeView = MPVolumeView(frame: .zero)
     var timer: Timer!
@@ -125,10 +127,12 @@ class PlayerViewController: UIViewController {
         initializeSoundWave()
         playButton.setRoundFrame()
         customizeVolumeSlider()
+        exerciseBackgroundImageView.kf.setImage(with: URL(string: exercise.imageURL!))
+        exerciseBackgroundImageView.addBlurEffect(withStyle: .light)
     }
 
     private func customizeVolumeSlider() {
-        let sliderImage = UIImage.circle(diameter: GlobalVariables.sliderHeight, color: UIColor.AppColors.pink)
+        let sliderImage = UIImage.circle(diameter: GlobalVariables.sliderHeight, color: UIColor.AppColors.blue)
         volumeSlider.setThumbImage(sliderImage, for: .normal)
         volumeSlider.setThumbImage(sliderImage, for: .highlighted)
     }
@@ -153,6 +157,17 @@ class PlayerViewController: UIViewController {
         audioButtonLoadingView.isHidden = !state
         setButtonImage()
     }
+    
+    private func progressForward() {
+        currentTime + GlobalVariables.playerProgress <= audioDuration ? setAudioTime(at: currentTime + GlobalVariables.playerProgress) : setAudioTime(at: audioDuration - 1)
+        audioVizualizationSlider.isSelected = false
+    }
+    
+    private func progressBackward() {
+        currentTime - GlobalVariables.playerProgress > 0 ? setAudioTime(at: currentTime - GlobalVariables.playerProgress) : setAudioTime(at: 0)
+        audioVizualizationSlider.isSelected = false
+    }
+
 
 }
 
@@ -165,7 +180,7 @@ extension PlayerViewController {
     }
 
     private func initializeViewModel() {
-        viewModel.initializeAudio(audioURL: exercise.audioURL!)
+        viewModel.initializeAudio(audioURL: exercise.audioURL!, title: exercise.title!)
         bindViewModel()
     }
 
@@ -186,7 +201,7 @@ extension PlayerViewController {
         audioVisualizationView.meteringLevelBarInterItem = 1.5
         audioVisualizationView.meteringLevelBarCornerRadius = 0.0
         audioVisualizationView.gradientStartColor = UIColor.AppColors.transparency75White
-        audioVisualizationView.gradientEndColor = UIColor.AppColors.pink
+        audioVisualizationView.gradientEndColor = UIColor.AppColors.blue
         audioVisualizationView.audioVisualizationMode = .read
         audioVisualizationView.shouldDisplayBlock = true
         audioVisualizationView.meteringLevels = viewModel.handle(meteringLevels: exercise.meteringLevels!)
@@ -319,3 +334,31 @@ extension PlayerViewController {
     }
 
 }
+
+// Track remote control events
+
+extension PlayerViewController {
+    
+    override func remoteControlReceived(with event: UIEvent?) {
+        if event?.type == .remoteControl {
+            switch event!.subtype {
+            case .remoteControlPlay:
+                viewModel.playOrPauseAudio()
+            case .remoteControlPause:
+                viewModel.playOrPauseAudio()
+            case .remoteControlNextTrack:
+                viewModel.playOrPauseAudio()
+                progressForward()
+                viewModel.playOrPauseAudio()
+            case .remoteControlPreviousTrack:
+                viewModel.playOrPauseAudio()
+                progressBackward()
+                viewModel.playOrPauseAudio()
+            default:
+                break
+            }
+        }
+    }
+    
+}
+

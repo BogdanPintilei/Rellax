@@ -1,18 +1,18 @@
 //
 //  Exercise.swift
-//  Mindfulness
+//  Rellax
 //
 //  Created by Bogdan Pintilei on 7/4/18.
-//  Copyright © 2018 Wolfpack. All rights reserved.
+//  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
 
-class Exercise: Codable {
+class Track: Codable {
 
     var id: Int?
     var title: String?
-    var exerciseDescription: String?
+    var trackDescription: String?
     var duration: Float?
     var imageURL: String?
     var audioURL: String?
@@ -31,7 +31,7 @@ class Exercise: Codable {
     ) {
         self.id = id
         self.title = title
-        self.exerciseDescription = description
+        self.trackDescription = description
         self.duration = duration
         self.imageURL = imageURL
         self.meteringLevels = meteringLevels
@@ -40,19 +40,19 @@ class Exercise: Codable {
 
     private enum CodingKeys: String, CodingKey {
         case id
-        case title
-        case exerciseDescription = "exercise_description"
-        case duration
-        case imageURL = "image_url"
-        case audioURL = "audio_url"
-        case meteringLevels = "metering_levels"
+        case title = "track_name"
+        case trackDescription = "track_description"
+        case imageURL = "track_image"
+        case audioURL = "track_audio"
+        case duration = "track_duration"
+        case meteringLevels = "track_metering_levels"
     }
 
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decodeIfPresent(Int.self, forKey: .id)
         title = try container.decodeIfPresent(String.self, forKey: .title)
-        exerciseDescription = try container.decodeIfPresent(String.self, forKey: .exerciseDescription)
+        trackDescription = try container.decodeIfPresent(String.self, forKey: .trackDescription)
         duration = try container.decodeIfPresent(Float.self, forKey: .duration)
         imageURL = try container.decodeIfPresent(String.self, forKey: .imageURL)
         audioURL = try container.decodeIfPresent(String.self, forKey: .audioURL)
